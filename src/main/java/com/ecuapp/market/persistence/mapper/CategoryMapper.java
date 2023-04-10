@@ -15,6 +15,11 @@ public interface CategoryMapper {
     })
     Category toCategory(Categoria categoria);
 
+    /**
+     *
+     * @param category
+     * @return
+     */
     @InheritConfiguration
     @Mapping(target = "productos", ignore = true)
     Categoria toCategoria(Category category);
